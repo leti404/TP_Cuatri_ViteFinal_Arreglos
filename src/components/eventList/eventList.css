@@ -4,23 +4,27 @@
   gap: 1.5rem;
   padding: 2rem;
   background-color: #f8f9fa;
-  border-radius: 10px;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.05);
 }
 
 .loading,
 .error {
+  grid-column: 1 / -1;
   text-align: center;
   font-size: 1.2rem;
   padding: 2rem;
-  color: #555;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .loading {
   color: #007bff;
+  font-weight: 500;
 }
 
 .error {
   color: #dc3545;
+  font-weight: 600;
 }
 
 .eventList p {
@@ -30,23 +34,28 @@
   color: #666;
 }
 
-.ListButton{
- width: 9vw;
- height: 2vw;
- border-radius: 0.6vw;
- border: 0vw;
- margin-top: 0.5vw;
- margin-left: 0.5vw;
+.ListButton {
+  width: 9vw;
+  height: 2vw;
+  border-radius: 0.6vw;
+  border: none;
+  margin-top: 0.5vw;
+  margin-left: 0.5vw;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 0.85vw;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.ListButton:hover
-{
+.ListButton:hover {
   transform: translateY(-0.2vw);
   box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.1);
+  background-color: #0056b3;
   cursor: pointer;
 }
 
-.pagination{
+.pagination {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
