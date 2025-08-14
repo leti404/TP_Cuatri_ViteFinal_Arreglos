@@ -1,37 +1,39 @@
 @media (min-width: 750px) {
-    .publicaciones-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr)); /* Columnas dinámicas */
-      gap: 1vw; /* Espacio entre tarjetas */
-      width: 100%; /* Ocupa todo el ancho disponible */
-      max-width: 100%; /* Elimina la restricción de 20vw */
-      justify-items: center; /* Centra las tarjetas en las celdas */
-    }
-    .noLibros{
-        font-size: 1vw;
-    }
-
-    .title{
-        font-size: 2vw;
-    }
+  .publicaciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
+    gap: 1vw;
+    width: 100%;
+    max-width: 100%;
+    justify-items: center;
   }
-  
-  @media (max-width: 749px) {
-    .publicaciones-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr)); /* Ajusta para pantallas pequeñas */
-      gap: 1vw; /* Espacio entre tarjetas */
-      width: 100%; /* Ocupa todo el ancho disponible */
-      max-width: 100%; /* Elimina la restricción de 20vw */
-      justify-items: center; /* Centra las tarjetas en las celdas */
-    }
 
-    .noLibros{
-       
-        font-size: 1vw;
-    }
-
-    .title{
-        font-size: 2vw;
-    }
+  .noLibros {
+    font-size: 1vw;
   }
+
+  .title {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 749px) {
+  .publicaciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45vw, 1fr));
+    gap: 2vw;
+    width: 100%;
+    max-width: 100%;
+    justify-items: center;
+  }
+
+  .noLibros {
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 5vw;
+    text-align: center;
+  }
+}

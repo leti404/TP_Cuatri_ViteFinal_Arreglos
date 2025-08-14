@@ -1,50 +1,65 @@
 .profile-header {
-    display: flex;
-    align-items: center;
-    padding: 16px;
-    background-color: white;
-  }
-  
-  .profile-img {
-    width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 0.1vw;
+  display: flex;
+  align-items: center;
+  padding: 1.2vw;
+  background-color: #fff;
+  border-radius: 0.6vw;
+  box-shadow: 0 0.3vw 0.8vw rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-  
-  .profile-info {
-    margin-left: 16px;
-  }
-  
-  .profile-name {
-    margin: 0;
-    font-size: 1.3vw;
-    font-weight: bold;
-  }
-  
-  .profile-username {
-    margin: 0.2vw 0 0.4vw 0;
-    font-size: 1vw;
-    color: #555;
+
+.profile-img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.15vw solid #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-  
-  .profile-actions {
-    display: flex;
-    gap: 8px;
-  }
-  .edit-btn, .logout-btn {
-    padding: 0.4vw 0.6vw;
-    font-size: 1.2vw;
-    border-radius: 0.5vw;
-    border: none;
-    background-color: #f3e9ff;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.15);
 }
-  
-  .edit-btn:hover,
-  .logout-btn:hover {
-    background-color: #d6bcff;
-  }
+
+.profile-info {
+  margin-left: 1.5vw;
+  flex-grow: 1;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: #222;
+}
+
+.profile-username {
+  margin: 0.3vw 0 0.6vw;
+  font-size: 1vw;
+  color: #555;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 0.6vw;
+}
+
+.edit-btn,
+.logout-btn {
+  padding: 0.5vw 1vw;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  border: none;
+  background-color: #f3e9ff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.edit-btn:hover,
+.logout-btn:hover {
+  background-color: #d6bcff;
+  transform: translateY(-0.1vw);
+  box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.1);
+}
