@@ -3,7 +3,7 @@
   min-height: 60vw;
   margin: 4vw auto;
   padding: 2.5vw;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 0.8vw;
   box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,12 +11,14 @@
   flex-direction: column;
   gap: 1.5vw;
   border: 1px solid #e0e0e0;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .eventForm:hover {
   box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.1vw);
 }
+
 .eventForm__input,
 .eventForm__textarea {
   width: 100%;
@@ -26,8 +28,7 @@
   border-radius: 0.4vw;
   background-color: #fafafa;
   box-sizing: border-box;
-  margin-bottom: 1.5vw;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .eventForm__input:focus,
@@ -35,6 +36,7 @@
   border-color: #555;
   background-color: #fff;
   outline: none;
+  box-shadow: 0 0 0 0.15vw rgba(0, 0, 0, 0.05);
 }
 
 .eventForm__textarea {
@@ -51,41 +53,16 @@
   border: none;
   border-radius: 0.4vw;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.1s ease;
+  transition: background-color 0.3s ease, transform 0.15s ease, box-shadow 0.2s ease;
 }
 
 .eventForm__button:hover:not(:disabled) {
   background-color: #000;
-  transform: translateY(-2px);
+  transform: translateY(-0.2vw);
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.15);
 }
 
 .eventForm__button:disabled {
-  background-color: #aaa;
-  cursor: not-allowed;
-}
-
-.eventForm textarea {
-  min-height: 8vw;
-}
-
-.eventForm button {
-  width: 100%;
-  padding: 1vw;
-  font-size: 1.1vw;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 0.4vw;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.1s ease;
-}
-
-.eventForm button:hover:not(:disabled) {
-  background-color: #000;
-  transform: translateY(-2px);
-}
-
-.eventForm button:disabled {
   background-color: #aaa;
   cursor: not-allowed;
 }

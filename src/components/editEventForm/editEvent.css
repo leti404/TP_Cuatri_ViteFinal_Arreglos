@@ -1,60 +1,57 @@
 .total {
   width: 100vw;
-  min-height: 100vw;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color: #f0f0f0;
-  padding-top: 2vw;
+  background: linear-gradient(180deg, #f9f9f9, #f0f0f0);
+  padding-top: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Contenedor principal */
 .edit-event-form__container {
-  width: 60vw;
-  background-color: #ffffff;
-  padding: 2.5vw;
-  border-radius: 0.8vw;
-  box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.1);
-  margin-top: 4vw;
-  border: 1px solid #e0e0e0;
-  transition: box-shadow 0.3s ease;
+  width: 60%;
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+  margin-top: 4rem;
+  border: 1px solid #e5e5e5;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .edit-event-form__container:hover {
-  box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
 }
 
-/* Título */
 .edit-event-form__title {
-  font-size: 2.2vw;
+  font-size: 2rem;
   text-align: center;
-  margin-bottom: 2vw;
+  margin-bottom: 2rem;
   color: #222;
-  font-weight: 6vw;
+  font-weight: 600;
 }
 
-/* Labels */
 .edit-event-form__label {
   display: block;
-  font-size: 1.1vw;
-  margin-bottom: 0.6vw;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
   color: #333;
-  font-weight: 5vw;
+  font-weight: 500;
 }
 
-/* Inputs y Textarea */
 .edit-event-form__input,
 .edit-event-form__textarea {
   width: 100%;
-  padding: 0.9vw;
-  font-size: 1vw;
+  padding: 0.9rem;
+  font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 0.4vw;
-  margin-bottom: 1.5vw;
+  border-radius: 0.4rem;
+  margin-bottom: 1.5rem;
   box-sizing: border-box;
   background-color: #fafafa;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .edit-event-form__input:focus,
@@ -62,44 +59,46 @@
   border-color: #555;
   background-color: #fff;
   outline: none;
+  box-shadow: 0 0 0 0.15rem rgba(0, 0, 0, 0.05);
 }
 
 .edit-event-form__textarea {
   resize: vertical;
-  min-height: 8vw;
+  min-height: 8rem;
 }
 
-/* Checkbox */
 .edit-event-form__checkbox-label {
   display: flex;
   align-items: center;
-  font-size: 1vw;
-  margin-bottom: 1.5vw;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
   color: #444;
+  cursor: pointer;
 }
 
 .edit-event-form__checkbox {
-  width: 1.2vw;
-  height: 1.2vw;
-  margin-left: 0.8vw;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-left: 0.8rem;
+  accent-color: #333;
 }
 
-/* Botón */
 .edit-event-form__button {
   width: 100%;
-  padding: 1vw;
-  font-size: 1.1vw;
+  padding: 1rem;
+  font-size: 1rem;
   background-color: #333;
   color: #fff;
   border: none;
-  border-radius: 0.4vw;
+  border-radius: 0.4rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.1s ease;
+  transition: background-color 0.3s ease, transform 0.15s ease, box-shadow 0.2s ease;
 }
 
 .edit-event-form__button:hover:not(:disabled) {
   background-color: #000;
   transform: translateY(-2px);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.15);
 }
 
 .edit-event-form__button:disabled {
@@ -108,13 +107,13 @@
 }
 
 .edit-event-form__error {
-  font-size: 0.95vw;
-  color: #8f3633;
-  margin-bottom: 1vw;
+  font-size: 0.9rem;
+  color: #b14442;
+  margin-bottom: 1rem;
 }
 
 .edit-event-form__success {
-  font-size: 0.95vw;
+  font-size: 0.9rem;
   color: #1d7732;
-  margin-bottom: 1vw;
+  margin-bottom: 1rem;
 }
